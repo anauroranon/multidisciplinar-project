@@ -1,0 +1,33 @@
+=== icfg ===
+rc: 1
+---- STDOUT ----
+
+---- STDERR ----
+Traceback (most recent call last):
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/scripts/extract_icfg.py", line 56, in <module>
+    extract_icfg(args.binary, args.outdir)
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/scripts/extract_icfg.py", line 17, in extract_icfg
+    proj = angr.Project(binary, auto_load_libs=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/venv/lib/python3.12/site-packages/angr/project.py", line 137, in __init__
+    self.loader = cle.Loader(self.filename, concrete_target=concrete_target, **load_options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/venv/lib/python3.12/site-packages/cle/loader.py", line 133, in __init__
+    self.initial_load_objects = self._internal_load(main_binary, *preload_libs, *force_load_libs, preloading=(main_binary, *preload_libs))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/venv/lib/python3.12/site-packages/cle/loader.py", line 689, in _internal_load
+    obj = self._load_object_isolated(main_spec)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Lucca/multidisciplinar-project/venv/lib/python3.12/site-packages/cle/loader.py", line 866, in _load_object_isolated
+    raise CLECompatibilityError("Unable to find a loader backend for %s.  Perhaps try the 'blob' loader?" % spec)
+cle.errors.CLECompatibilityError: Unable to find a loader backend for /home/kali/Desktop/Lucca/multidisciplinar-project/examples/test_bin.  Perhaps try the 'blob' loader?
+
+
+=== imports ===
+rc: 0
+---- STDOUT ----
+Saved imports graph
+
+---- STDERR ----
+
+

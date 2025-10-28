@@ -1,0 +1,47 @@
+=== icfg ===
+rc: 0
+---- STDOUT ----
+[+] Saved ICFG -> outputs/debug/ffe31c5e479bb0fac1ae176822f33649bfce4a7fde0ff7c56fd2fcf379953832/ffe31c5e479bb0fac1ae176822f33649bfce4a7fde0ff7c56fd2fcf379953832_icfg.graphml
+
+---- STDERR ----
+WARNING | 2025-10-22 18:43:35,395 | cle.backends.tls | The provided object has an invalid tls_data_size. Skip TLS loading.
+WARNING | 2025-10-22 18:43:46,118 | angr.engines.successors | Too many possible syscalls. Concretizing to 1.
+WARNING | 2025-10-22 18:43:46,250 | angr.engines.successors | Too many possible syscalls. Concretizing to 1.
+WARNING | 2025-10-22 18:43:46,320 | angr.engines.successors | Too many possible syscalls. Concretizing to 1.
+WARNING | 2025-10-22 18:43:46,375 | angr.engines.successors | Too many possible syscalls. Concretizing to 1.
+
+adding nodes:   0%|          | 0/4986 [00:00<?, ?it/s]
+adding nodes:   4%|▍         | 202/4986 [00:00<00:02, 2019.17it/s]
+adding nodes:   8%|▊         | 404/4986 [00:00<00:02, 1811.49it/s]
+adding nodes:  12%|█▏        | 607/4986 [00:00<00:02, 1898.08it/s]
+adding nodes:  17%|█▋        | 831/4986 [00:00<00:02, 2026.62it/s]
+adding nodes:  21%|██        | 1050/4986 [00:00<00:01, 2082.18it/s]
+adding nodes:  26%|██▌       | 1307/4986 [00:00<00:01, 2243.76it/s]
+adding nodes:  32%|███▏      | 1581/4986 [00:00<00:02, 1338.23it/s]
+adding nodes:  37%|███▋      | 1859/4986 [00:01<00:01, 1627.71it/s]
+adding nodes:  45%|████▌     | 2262/4986 [00:01<00:01, 2169.12it/s]
+adding nodes:  52%|█████▏    | 2597/4986 [00:01<00:00, 2456.29it/s]
+adding nodes:  58%|█████▊    | 2887/4986 [00:01<00:00, 2382.73it/s]
+adding nodes:  63%|██████▎   | 3156/4986 [00:01<00:00, 2376.35it/s]
+adding nodes:  69%|██████▊   | 3427/4986 [00:01<00:00, 2462.13it/s]
+adding nodes:  74%|███████▍  | 3690/4986 [00:01<00:00, 2500.74it/s]
+adding nodes:  80%|████████  | 3991/4986 [00:01<00:00, 2635.83it/s]
+adding nodes:  86%|████████▌ | 4266/4986 [00:01<00:00, 2666.68it/s]
+adding nodes:  91%|█████████ | 4540/4986 [00:02<00:00, 2275.66it/s]
+adding nodes:  96%|█████████▌| 4782/4986 [00:02<00:00, 1371.45it/s]
+adding nodes: 100%|█████████▉| 4971/4986 [00:02<00:00, 1455.79it/s]
+adding nodes: 100%|██████████| 4986/4986 [00:02<00:00, 1953.18it/s]
+
+adding edges:   0%|          | 0/8794 [00:00<?, ?it/s]
+adding edges: 100%|██████████| 8794/8794 [00:00<00:00, 341294.40it/s]
+
+
+=== imports ===
+rc: 0
+---- STDOUT ----
+Saved imports graph
+
+---- STDERR ----
+Can't access the content of section #28
+
+
