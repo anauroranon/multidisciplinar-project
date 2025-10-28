@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ---
 
-## Esempi di esecuzione (minimale)
+## Esempi di esecuzione
 Assicurarsi sempre di essere nel root del progetto e di aver attivato il venv
 
 * Eseguire singolo extractor (FCG + feature per un binario):
@@ -71,7 +71,6 @@ Questo creerà per ogni file in `./dataset` una cartella `outputs/dataset/<basen
 
 ---
 
-## Consigli rapidi
 * Se un extractor fallisce per qualche sample, controlla il file generato nello stesso output-folder o riesegui lo script manualmente per leggere l'errore.
 * Non eseguire i binari sospetti sul host: l'analisi qui è statica e sicura.
 
