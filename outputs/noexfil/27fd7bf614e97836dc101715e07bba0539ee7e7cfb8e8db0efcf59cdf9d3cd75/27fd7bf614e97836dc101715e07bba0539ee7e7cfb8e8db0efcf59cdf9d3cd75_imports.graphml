@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libssl.so.3">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libcrypto.so.3">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libuv.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="liblog.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc++_shared.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: __libc_init (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libssl.so.3" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libcrypto.so.3" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libuv.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libc.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libdl.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="liblog.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libc++_shared.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="libm.so" />
+    <edge source="27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75" target="0x0000000000: __libc_init (0x0000 bytes)" />
+  </graph>
+</graphml>

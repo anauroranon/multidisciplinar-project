@@ -1,0 +1,30 @@
+{
+  "binary": "samples/noexfil/b08e2ac802062597ac8f75c4b527ff5a69c5afdd828ffd20105cd9cbd8ed2efe",
+  "n_nodes": 8,
+  "nodes": {
+    "b08e2ac802062597ac8f75c4b527ff5a69c5afdd828ffd20105cd9cbd8ed2efe": {
+      "type": "binary"
+    },
+    "libssl.so.3": {
+      "type": "lib"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libhwloc.so.15": {
+      "type": "lib"
+    },
+    "libm.so.6": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "ld-linux-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: SSL_CTX_use_PrivateKey_file (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libglib-2.0.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libwebkit2gtk-4.0.so.37">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgtk-3.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgdk-3.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgdk_pixbuf-2.0.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgio-2.0.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libjavascriptcoregtk-4.0.so.18">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgobject-2.0.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: webkit_settings_set_hardware_acceleration_policy (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libglib-2.0.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libwebkit2gtk-4.0.so.37" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libgtk-3.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libgdk-3.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libgdk_pixbuf-2.0.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libgio-2.0.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libjavascriptcoregtk-4.0.so.18" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libgobject-2.0.so.0" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="libc.so.6" />
+    <edge source="24dada1274cda5d9f2b48e86b7e46aef41b424c54f4d6968cfa733500ef41bf6" target="0x0000000000: webkit_settings_set_hardware_acceleration_policy (0x0000 bytes)" />
+  </graph>
+</graphml>

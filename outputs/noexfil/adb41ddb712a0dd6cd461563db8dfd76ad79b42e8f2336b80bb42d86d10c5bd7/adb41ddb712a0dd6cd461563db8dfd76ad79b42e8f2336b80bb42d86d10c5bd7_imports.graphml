@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libssl.so.3">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libcrypto.so.3">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libuv.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libhwloc.so.15">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.musl-aarch64.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: SSL_CTX_use_PrivateKey_file (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="libssl.so.3" />
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="libcrypto.so.3" />
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="libuv.so.1" />
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="libhwloc.so.15" />
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="libc.musl-aarch64.so.1" />
+    <edge source="adb41ddb712a0dd6cd461563db8dfd76ad79b42e8f2336b80bb42d86d10c5bd7" target="0x0000000000: SSL_CTX_use_PrivateKey_file (0x0000 bytes)" />
+  </graph>
+</graphml>

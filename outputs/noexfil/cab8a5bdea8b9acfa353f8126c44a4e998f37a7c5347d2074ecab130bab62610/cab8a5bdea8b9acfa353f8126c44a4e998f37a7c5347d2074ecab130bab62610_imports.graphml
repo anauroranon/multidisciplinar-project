@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610">
+      <data key="d0">binary</data>
+    </node>
+    <node id="liblog.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libporch.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: rfbInitServerWithPthreadsAndZRLE (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="liblog.so" />
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="libporch.so" />
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="libm.so" />
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="libdl.so" />
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="libc.so" />
+    <edge source="cab8a5bdea8b9acfa353f8126c44a4e998f37a7c5347d2074ecab130bab62610" target="0x0000000000: rfbInitServerWithPthreadsAndZRLE (0x0000 bytes)" />
+  </graph>
+</graphml>

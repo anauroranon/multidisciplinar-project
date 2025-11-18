@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/c300dadac5dba75d64a2a764311553071d72d9e651e9e1a17839493e30e8f680",
+  "n_nodes": 6,
+  "nodes": {
+    "c300dadac5dba75d64a2a764311553071d72d9e651e9e1a17839493e30e8f680": {
+      "type": "binary"
+    },
+    "libdl.so.2": {
+      "type": "lib"
+    },
+    "libz.so.1": {
+      "type": "lib"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: memcpy (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

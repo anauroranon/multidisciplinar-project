@@ -1,0 +1,27 @@
+{
+  "binary": "samples/noexfil/e5e1ddfbde654d23fb8331958f509842835d9ee58baaca34e44579a47fb2d78a",
+  "n_nodes": 7,
+  "nodes": {
+    "e5e1ddfbde654d23fb8331958f509842835d9ee58baaca34e44579a47fb2d78a": {
+      "type": "binary"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libstdc++.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "0x0000000000: pthread_getspecific (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

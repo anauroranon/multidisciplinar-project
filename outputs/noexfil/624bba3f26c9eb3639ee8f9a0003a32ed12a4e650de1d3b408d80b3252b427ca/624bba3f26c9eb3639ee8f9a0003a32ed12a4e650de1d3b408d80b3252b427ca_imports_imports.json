@@ -1,0 +1,15 @@
+{
+  "binary": "samples/noexfil/624bba3f26c9eb3639ee8f9a0003a32ed12a4e650de1d3b408d80b3252b427ca",
+  "n_nodes": 3,
+  "nodes": {
+    "624bba3f26c9eb3639ee8f9a0003a32ed12a4e650de1d3b408d80b3252b427ca": {
+      "type": "binary"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: setuid (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

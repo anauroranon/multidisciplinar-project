@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/86d18fa6b667d754ebb1aba6393251e28bf4b64a6c82a53c11955c34f6b16a62",
+  "n_nodes": 4,
+  "nodes": {
+    "86d18fa6b667d754ebb1aba6393251e28bf4b64a6c82a53c11955c34f6b16a62": {
+      "type": "binary"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "0x0000000000: clock_gettime (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

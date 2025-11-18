@@ -1,0 +1,45 @@
+{
+  "binary": "samples/noexfil/56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004",
+  "n_nodes": 13,
+  "nodes": {
+    "56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004": {
+      "type": "binary"
+    },
+    "libcurl.so.4": {
+      "type": "lib"
+    },
+    "libjansson.so.4": {
+      "type": "lib"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libcrypto.so.1.1": {
+      "type": "lib"
+    },
+    "libssl.so.1.1": {
+      "type": "lib"
+    },
+    "libz.so.1": {
+      "type": "lib"
+    },
+    "libstdc++.so.6": {
+      "type": "lib"
+    },
+    "libm.so.6": {
+      "type": "lib"
+    },
+    "libomp.so.5": {
+      "type": "lib"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: abort (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

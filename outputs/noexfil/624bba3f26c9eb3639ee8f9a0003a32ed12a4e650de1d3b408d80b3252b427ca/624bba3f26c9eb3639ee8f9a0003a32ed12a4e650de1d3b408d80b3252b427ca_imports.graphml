@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="624bba3f26c9eb3639ee8f9a0003a32ed12a4e650de1d3b408d80b3252b427ca">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libc.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: setuid (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="624bba3f26c9eb3639ee8f9a0003a32ed12a4e650de1d3b408d80b3252b427ca" target="libc.so.6" />
+    <edge source="624bba3f26c9eb3639ee8f9a0003a32ed12a4e650de1d3b408d80b3252b427ca" target="0x0000000000: setuid (0x0000 bytes)" />
+  </graph>
+</graphml>

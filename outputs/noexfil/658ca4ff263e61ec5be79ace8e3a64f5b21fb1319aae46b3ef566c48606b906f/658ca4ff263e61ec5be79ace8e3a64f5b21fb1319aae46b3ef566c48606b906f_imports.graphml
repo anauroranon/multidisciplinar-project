@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libboost_system.so.1.62.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libboost_filesystem.so.1.62.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libboost_program_options-mt.so.1.62.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libboost_thread-mt.so.1.62.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libboost_chrono-mt.so.1.62.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libQt5Test.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libQt5Network.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libQt5Widgets.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libQt5Gui.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libQt5Core.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libprotobuf.so.14">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdb_cxx-5.3.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libssl.so.44">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libcrypto.so.42">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libminiupnpc.so.16">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libevent_pthreads-2.1.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libevent-2.1.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libstdc++.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgcc_s.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.musl-aarch64.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: _ZN4QUrl6setUrlERK7QStringNS_11ParsingModeE (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libboost_system.so.1.62.0" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libboost_filesystem.so.1.62.0" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libboost_program_options-mt.so.1.62.0" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libboost_thread-mt.so.1.62.0" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libboost_chrono-mt.so.1.62.0" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libQt5Test.so.5" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libQt5Network.so.5" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libQt5Widgets.so.5" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libQt5Gui.so.5" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libQt5Core.so.5" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libprotobuf.so.14" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libdb_cxx-5.3.so" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libssl.so.44" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libcrypto.so.42" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libminiupnpc.so.16" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libevent_pthreads-2.1.so.6" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libevent-2.1.so.6" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libstdc++.so.6" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libgcc_s.so.1" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="libc.musl-aarch64.so.1" />
+    <edge source="658ca4ff263e61ec5be79ace8e3a64f5b21fb1319aae46b3ef566c48606b906f" target="0x0000000000: _ZN4QUrl6setUrlERK7QStringNS_11ParsingModeE (0x0000 bytes)" />
+  </graph>
+</graphml>

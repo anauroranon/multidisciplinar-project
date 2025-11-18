@@ -1,0 +1,27 @@
+{
+  "binary": "samples/noexfil/a748a4340a8d4cddb1419cd0b6baf3139c3da0e2d818135388d1224447d09c9e",
+  "n_nodes": 7,
+  "nodes": {
+    "a748a4340a8d4cddb1419cd0b6baf3139c3da0e2d818135388d1224447d09c9e": {
+      "type": "binary"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libstdc++.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "0x0000000000: mprotect (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="a2e77187d0bcfab783abf4bc2ffa5d68383a762f28607f899d07ee3d20511e9d">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: memcpy (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="a2e77187d0bcfab783abf4bc2ffa5d68383a762f28607f899d07ee3d20511e9d" target="libm.so" />
+    <edge source="a2e77187d0bcfab783abf4bc2ffa5d68383a762f28607f899d07ee3d20511e9d" target="libdl.so" />
+    <edge source="a2e77187d0bcfab783abf4bc2ffa5d68383a762f28607f899d07ee3d20511e9d" target="libc.so" />
+    <edge source="a2e77187d0bcfab783abf4bc2ffa5d68383a762f28607f899d07ee3d20511e9d" target="0x0000000000: memcpy (0x0000 bytes)" />
+  </graph>
+</graphml>

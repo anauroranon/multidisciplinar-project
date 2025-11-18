@@ -7,6 +7,7 @@ from tqdm import tqdm
 import numpy as np
 from pathlib import Path
 import json
+from cg_saver import PartialSaver
 
 def shannon_entropy(data_bytes: bytes) -> float:
     if not data_bytes:
@@ -19,6 +20,11 @@ def extract_icfg(binary, outdir):
     proj = angr.Project(binary, auto_load_libs=False)
     cfg = proj.analyses.CFGFast(normalize=True)
     G = nx.DiGraph()
+
+    # --- NEW: partial saver (non invasivo) ---
+    sample_id = Path(binary).stem
+    saver = PartialSaver(out_dir=outdir, sample_id=sample_id, flush_every=200)
+
     # cfg.graph nodes are CFGNode objects
     for node in tqdm(list(cfg.graph.nodes()), desc="adding nodes"):
         try:
@@ -34,26 +40,49 @@ def extract_icfg(binary, outdir):
         except Exception:
             ent = 0.0
             size = size or 0
+
         G.add_node(str(addr), addr=addr, size=size, entropy=float(ent))
+
+        # --- NEW: append parziale del nodo ---
+        try:
+            saver.append("icfg", {
+                "kind": "node",
+                "addr": int(addr),
+                "size": int(size),
+                "entropy": float(ent)
+            })
+        except Exception:
+            pass  # mai bloccare l’analisi per il salvataggio parziale
+
     # edges: use cfg.graph edges (node->succ_node)
     for src, dst in tqdm(cfg.graph.edges(), desc="adding edges"):
         try:
             sa = str(src.addr)
             da = str(dst.addr)
             G.add_edge(sa, da)
+            # --- NEW: append parziale dell’arco ---
+            try:
+                saver.append("icfg", {
+                    "kind": "edge",
+                    "src": int(src.addr),
+                    "dst": int(dst.addr)
+                })
+            except Exception:
+                pass
         except Exception:
             continue
+
     os.makedirs(outdir, exist_ok=True)
     base = os.path.splitext(os.path.basename(binary))[0]
     gpath = os.path.join(outdir, base + "_icfg.graphml")
     nx.write_graphml(G, gpath)
     print("[+] Saved ICFG ->", gpath)
-        # Create json file
+
+    # Create json file
     graphml_path = os.path.join(outdir, f"{base}_icfg.graphml")
     nodes_json_path = Path(graphml_path).with_name(Path(graphml_path).stem + "_icfg.json")
-    
+
     nodes = {}
-    
     for n, d in G.nodes(data=True):
         # serializzabile: converti eventuali numpy types ecc.
         serial = {}
@@ -66,10 +95,12 @@ def extract_icfg(binary, outdir):
                 pass
             serial[k] = v
         nodes[str(n)] = serial
+
     with open(nodes_json_path, "w") as f:
         json.dump({"binary": binary, "n_nodes": len(nodes), "nodes": nodes}, f, indent=2)
-        
+
     return gpath
+
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()

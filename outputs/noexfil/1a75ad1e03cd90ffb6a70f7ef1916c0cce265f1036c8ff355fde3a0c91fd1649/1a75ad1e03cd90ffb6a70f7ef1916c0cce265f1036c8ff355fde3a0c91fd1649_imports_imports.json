@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/1a75ad1e03cd90ffb6a70f7ef1916c0cce265f1036c8ff355fde3a0c91fd1649",
+  "n_nodes": 6,
+  "nodes": {
+    "1a75ad1e03cd90ffb6a70f7ef1916c0cce265f1036c8ff355fde3a0c91fd1649": {
+      "type": "binary"
+    },
+    "libstdc++.so.6": {
+      "type": "lib"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "ld-linux-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: _Znam (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

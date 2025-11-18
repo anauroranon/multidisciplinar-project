@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/eaa1b2dff0c161dcfbd11a62c5ea2ace927d1872ab81fd593cbe0679392f1221",
+  "n_nodes": 6,
+  "nodes": {
+    "eaa1b2dff0c161dcfbd11a62c5ea2ace927d1872ab81fd593cbe0679392f1221": {
+      "type": "binary"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "0x0000000000: pthread_create (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

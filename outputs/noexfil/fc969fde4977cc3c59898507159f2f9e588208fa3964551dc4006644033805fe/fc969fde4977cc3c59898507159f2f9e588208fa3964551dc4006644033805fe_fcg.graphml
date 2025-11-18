@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d10" for="node" attr.name="instr_count_est" attr.type="long" />
+  <key id="d9" for="node" attr.name="avg_bytes_per_block" attr.type="double" />
+  <key id="d8" for="node" attr.name="svc_count" attr.type="long" />
+  <key id="d7" for="node" attr.name="bl_indirect_count" attr.type="long" />
+  <key id="d6" for="node" attr.name="bl_count" attr.type="long" />
+  <key id="d5" for="node" attr.name="std_block_entropy" attr.type="double" />
+  <key id="d4" for="node" attr.name="avg_block_entropy" attr.type="double" />
+  <key id="d3" for="node" attr.name="total_bytes" attr.type="long" />
+  <key id="d2" for="node" attr.name="n_blocks" attr.type="long" />
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="addr" attr.type="long" />
+  <graph edgedefault="directed">
+    <node id="4198480">
+      <data key="d0">4198480</data>
+      <data key="d1">sub_401050</data>
+      <data key="d2">1</data>
+      <data key="d3">20</data>
+      <data key="d4">4.221928094887363</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">19.99999998</data>
+      <data key="d10">5</data>
+    </node>
+    <node id="4198500">
+      <data key="d0">4198500</data>
+      <data key="d1">sub_401064</data>
+      <data key="d2">1</data>
+      <data key="d3">28</data>
+      <data key="d4">3.8248629576173565</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">27.999999971999998</data>
+      <data key="d10">7</data>
+    </node>
+    <node id="4198512">
+      <data key="d0">4198512</data>
+      <data key="d1">_ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198528">
+      <data key="d0">4198528</data>
+      <data key="d1">_ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198544">
+      <data key="d0">4198544</data>
+      <data key="d1">__cxa_finalize</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198560">
+      <data key="d0">4198560</data>
+      <data key="d1">_ZN7_JNIEnv17CallBooleanMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198576">
+      <data key="d0">4198576</data>
+      <data key="d1">_ZN7_JNIEnv22CallStaticObjectMethodEP7_jclassP10_jmethodIDz</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198592">
+      <data key="d0">4198592</data>
+      <data key="d1">__stack_chk_fail</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198608">
+      <data key="d0">4198608</data>
+      <data key="d1">_ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198624">
+      <data key="d0">4198624</data>
+      <data key="d1">__cxa_atexit</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.875</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198640">
+      <data key="d0">4198640</data>
+      <data key="d1">_start</data>
+      <data key="d2">1</data>
+      <data key="d3">12</data>
+      <data key="d4">2.4508257945180887</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">11.999999987999999</data>
+      <data key="d10">3</data>
+    </node>
+    <node id="4198652">
+      <data key="d0">4198652</data>
+      <data key="d1">sub_4010fc</data>
+      <data key="d2">3</data>
+      <data key="d3">24</data>
+      <data key="d4">2.5073517362914</data>
+      <data key="d5">0.7123621497134703</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">7.999999997333333</data>
+      <data key="d10">6</data>
+    </node>
+    <node id="4198676">
+      <data key="d0">4198676</data>
+      <data key="d1">sub_401114</data>
+      <data key="d2">1</data>
+      <data key="d3">24</data>
+      <data key="d4">3.146240625180289</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">23.999999975999998</data>
+      <data key="d10">6</data>
+    </node>
+    <node id="4198700">
+      <data key="d0">4198700</data>
+      <data key="d1">JNI_OnLoad</data>
+      <data key="d2">52</data>
+      <data key="d3">1560</data>
+      <data key="d4">3.924693351422864</data>
+      <data key="d5">0.6848041027182814</data>
+      <data key="d6">7</data>
+      <data key="d7">38</data>
+      <data key="d8">0</data>
+      <data key="d9">29.99999999942308</data>
+      <data key="d10">390</data>
+    </node>
+    <node id="4200220">
+      <data key="d0">4200220</data>
+      <data key="d1">_ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">4</data>
+      <data key="d3">160</data>
+      <data key="d4">3.8066159506662194</data>
+      <data key="d5">1.321678639057652</data>
+      <data key="d6">1</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">39.99999999</data>
+      <data key="d10">40</data>
+    </node>
+    <node id="4200380">
+      <data key="d0">4200380</data>
+      <data key="d1">_ZN7_JNIEnv22CallStaticObjectMethodEP7_jclassP10_jmethodIDz</data>
+      <data key="d2">4</data>
+      <data key="d3">160</data>
+      <data key="d4">3.813158516186051</data>
+      <data key="d5">1.3311965674353465</data>
+      <data key="d6">1</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">39.99999999</data>
+      <data key="d10">40</data>
+    </node>
+    <node id="4200540">
+      <data key="d0">4200540</data>
+      <data key="d1">_ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz</data>
+      <data key="d2">4</data>
+      <data key="d3">160</data>
+      <data key="d4">3.8066159506662194</data>
+      <data key="d5">1.321678639057652</data>
+      <data key="d6">1</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">39.99999999</data>
+      <data key="d10">40</data>
+    </node>
+    <node id="4200700">
+      <data key="d0">4200700</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_adbe</data>
+      <data key="d2">1</data>
+      <data key="d3">36</data>
+      <data key="d4">4.516875695766563</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">35.999999964</data>
+      <data key="d10">9</data>
+    </node>
+    <node id="4200736">
+      <data key="d0">4200736</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_fffbdd</data>
+      <data key="d2">5</data>
+      <data key="d3">156</data>
+      <data key="d4">4.191447318881698</data>
+      <data key="d5">0.568954355317099</data>
+      <data key="d6">1</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">31.19999999376</data>
+      <data key="d10">39</data>
+    </node>
+    <node id="4200892">
+      <data key="d0">4200892</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_ecff</data>
+      <data key="d2">1</data>
+      <data key="d3">36</data>
+      <data key="d4">4.593400348604439</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">35.999999964</data>
+      <data key="d10">9</data>
+    </node>
+    <node id="4200928">
+      <data key="d0">4200928</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_debfacea</data>
+      <data key="d2">5</data>
+      <data key="d3">164</data>
+      <data key="d4">4.414143078827676</data>
+      <data key="d5">0.4615886315734785</data>
+      <data key="d6">0</data>
+      <data key="d7">4</data>
+      <data key="d8">0</data>
+      <data key="d9">32.79999999344</data>
+      <data key="d10">41</data>
+    </node>
+    <node id="4201092">
+      <data key="d0">4201092</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_ebceaa</data>
+      <data key="d2">5</data>
+      <data key="d3">188</data>
+      <data key="d4">4.39098050381952</data>
+      <data key="d5">0.5251456128877117</data>
+      <data key="d6">2</data>
+      <data key="d7">2</data>
+      <data key="d8">0</data>
+      <data key="d9">37.59999999248</data>
+      <data key="d10">47</data>
+    </node>
+    <node id="4201280">
+      <data key="d0">4201280</data>
+      <data key="d1">_ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">4</data>
+      <data key="d3">160</data>
+      <data key="d4">3.7993384497096936</data>
+      <data key="d5">1.3111254409259228</data>
+      <data key="d6">1</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">39.99999999</data>
+      <data key="d10">40</data>
+    </node>
+    <node id="4201440">
+      <data key="d0">4201440</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_fbaf</data>
+      <data key="d2">6</data>
+      <data key="d3">196</data>
+      <data key="d4">4.237545977155082</data>
+      <data key="d5">0.4244978966112892</data>
+      <data key="d6">2</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">32.66666666122222</data>
+      <data key="d10">49</data>
+    </node>
+    <node id="4201636">
+      <data key="d0">4201636</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_cffb</data>
+      <data key="d2">2</data>
+      <data key="d3">112</data>
+      <data key="d4">4.66266866423755</data>
+      <data key="d5">0.19327924470839397</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">55.999999972</data>
+      <data key="d10">28</data>
+    </node>
+    <node id="4201748">
+      <data key="d0">4201748</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_ecfccfea</data>
+      <data key="d2">4</data>
+      <data key="d3">148</data>
+      <data key="d4">4.360324727049932</data>
+      <data key="d5">0.2559664199864691</data>
+      <data key="d6">0</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">36.99999999075</data>
+      <data key="d10">37</data>
+    </node>
+    <node id="4201896">
+      <data key="d0">4201896</data>
+      <data key="d1">_ZN7_JNIEnv17CallBooleanMethodEP8_jobjectP10_jmethodIDz</data>
+      <data key="d2">4</data>
+      <data key="d3">160</data>
+      <data key="d4">3.8066159506662194</data>
+      <data key="d5">1.321678639057652</data>
+      <data key="d6">1</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">39.99999999</data>
+      <data key="d10">40</data>
+    </node>
+    <node id="4202056">
+      <data key="d0">4202056</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_cffeeabeb</data>
+      <data key="d2">1</data>
+      <data key="d3">28</data>
+      <data key="d4">4.3962915290459295</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">27.999999971999998</data>
+      <data key="d10">7</data>
+    </node>
+    <node id="4202084">
+      <data key="d0">4202084</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_ffaaeecee</data>
+      <data key="d2">5</data>
+      <data key="d3">180</data>
+      <data key="d4">4.418963535370671</data>
+      <data key="d5">0.4829484603871769</data>
+      <data key="d6">0</data>
+      <data key="d7">4</data>
+      <data key="d8">0</data>
+      <data key="d9">35.9999999928</data>
+      <data key="d10">45</data>
+    </node>
+    <node id="4202264">
+      <data key="d0">4202264</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_cfafaadf</data>
+      <data key="d2">7</data>
+      <data key="d3">232</data>
+      <data key="d4">4.284239152014028</data>
+      <data key="d5">0.42954856012119946</data>
+      <data key="d6">1</data>
+      <data key="d7">5</data>
+      <data key="d8">0</data>
+      <data key="d9">33.14285713812245</data>
+      <data key="d10">58</data>
+    </node>
+    <node id="4202496">
+      <data key="d0">4202496</data>
+      <data key="d1">Java_dyvafx_chgdiaerpj_xmcpwtjnsdh_Bfeafbcddbd_ffaaaaadcd</data>
+      <data key="d2">17</data>
+      <data key="d3">340</data>
+      <data key="d4">3.5954165576802377</data>
+      <data key="d5">0.9663254871358256</data>
+      <data key="d6">1</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">19.99999999882353</data>
+      <data key="d10">85</data>
+    </node>
+    <node id="5242880">
+      <data key="d0">5242880</data>
+      <data key="d1">__cxa_finalize</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242888">
+      <data key="d0">5242888</data>
+      <data key="d1">__stack_chk_fail</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242896">
+      <data key="d0">5242896</data>
+      <data key="d1">__cxa_atexit</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295632">
+      <data key="d0">6295632</data>
+      <data key="d1">UnresolvableJumpTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295640">
+      <data key="d0">6295640</data>
+      <data key="d1">UnresolvableCallTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <edge source="4198700" target="4198512" />
+    <edge source="4198700" target="4198592" />
+    <edge source="4198700" target="4198528" />
+    <edge source="4198700" target="4198576" />
+    <edge source="4200220" target="4198592" />
+    <edge source="4200380" target="4198592" />
+    <edge source="4200540" target="4198592" />
+    <edge source="4200736" target="4198528" />
+    <edge source="4201092" target="4198608" />
+    <edge source="4201092" target="4198512" />
+    <edge source="4201280" target="4198592" />
+    <edge source="4201440" target="4198512" />
+    <edge source="4201440" target="4198608" />
+    <edge source="4201896" target="4198592" />
+    <edge source="4202264" target="4198576" />
+    <edge source="4202496" target="4198592" />
+  </graph>
+</graphml>

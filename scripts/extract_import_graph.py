@@ -5,6 +5,7 @@ import networkx as nx
 import lief
 from pathlib import Path
 import json
+from cg_saver import PartialSaver
 
 def extract_import_graph(binary, outdir):
     b = lief.parse(binary)
@@ -12,11 +13,15 @@ def extract_import_graph(binary, outdir):
     base = os.path.basename(binary)
     # add node for binary
     G.add_node(base, type="binary")
+    sample_id = Path(binary).stem
+    saver = PartialSaver(out_dir=outdir, sample_id=sample_id, flush_every=200)
+    
     try:
         for lib in b.libraries:
             # lib is string name; add edge binary -> lib
             G.add_node(lib, type="lib")
             G.add_edge(base, lib)
+            saver.append("imports_imports", {"from": base, "to": lib, "etype": "import"})
         # imports: b.imported_functions or b.pltgot?
         # LIEF: use imported_symbols (ELF)
         for sym in b.imported_functions:

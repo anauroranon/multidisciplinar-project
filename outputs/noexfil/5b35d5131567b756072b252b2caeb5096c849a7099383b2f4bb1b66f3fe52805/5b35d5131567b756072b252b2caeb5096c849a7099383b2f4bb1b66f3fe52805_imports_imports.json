@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/5b35d5131567b756072b252b2caeb5096c849a7099383b2f4bb1b66f3fe52805",
+  "n_nodes": 4,
+  "nodes": {
+    "5b35d5131567b756072b252b2caeb5096c849a7099383b2f4bb1b66f3fe52805": {
+      "type": "binary"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: EVP_CIPHER_CTX_set_key_length (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

@@ -13,6 +13,8 @@ import json
 import math
 import os
 from tqdm import tqdm
+from pathlib import Path
+from cg_saver import PartialSaver
 
 import angr
 import networkx as nx
@@ -208,6 +210,7 @@ def extract_function_features(func, proj):
     return feats
 
 
+
 def build_fcg_and_features(binary_path, outdir, load_options=None):
     print(f"[+] Loading {binary_path} with angr...")
     proj = angr.Project(binary_path, auto_load_libs=False, load_options=load_options or {})
@@ -225,6 +228,8 @@ def build_fcg_and_features(binary_path, outdir, load_options=None):
     addr2func = {f.addr: f for f in functions}
 
     G = nx.DiGraph()
+    sample_id = Path(binary_path).stem
+    saver = PartialSaver(out_dir=outdir, sample_id=sample_id, flush_every=200)
 
     # create nodes with features
     for f in tqdm(functions, desc="funzioni"):

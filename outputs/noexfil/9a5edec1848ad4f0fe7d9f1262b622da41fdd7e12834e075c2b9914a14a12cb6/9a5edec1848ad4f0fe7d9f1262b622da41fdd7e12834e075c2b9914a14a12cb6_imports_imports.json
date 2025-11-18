@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/9a5edec1848ad4f0fe7d9f1262b622da41fdd7e12834e075c2b9914a14a12cb6",
+  "n_nodes": 4,
+  "nodes": {
+    "9a5edec1848ad4f0fe7d9f1262b622da41fdd7e12834e075c2b9914a14a12cb6": {
+      "type": "binary"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: memcpy (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

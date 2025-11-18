@@ -1,0 +1,36 @@
+{
+  "binary": "samples/noexfil/27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75",
+  "n_nodes": 10,
+  "nodes": {
+    "27fd7bf614e97836dc101715e07bba0539ee7e7cfb8e8db0efcf59cdf9d3cd75": {
+      "type": "binary"
+    },
+    "libssl.so.3": {
+      "type": "lib"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libuv.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libc++_shared.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "0x0000000000: __libc_init (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

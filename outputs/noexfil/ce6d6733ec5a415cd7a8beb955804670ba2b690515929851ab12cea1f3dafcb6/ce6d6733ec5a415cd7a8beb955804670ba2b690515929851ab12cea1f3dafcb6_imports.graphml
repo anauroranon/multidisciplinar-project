@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libz.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="liblog.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc++_shared.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libomp.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: __libc_init (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libz.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="liblog.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libc++_shared.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libm.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libomp.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libdl.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="libc.so" />
+    <edge source="ce6d6733ec5a415cd7a8beb955804670ba2b690515929851ab12cea1f3dafcb6" target="0x0000000000: __libc_init (0x0000 bytes)" />
+  </graph>
+</graphml>

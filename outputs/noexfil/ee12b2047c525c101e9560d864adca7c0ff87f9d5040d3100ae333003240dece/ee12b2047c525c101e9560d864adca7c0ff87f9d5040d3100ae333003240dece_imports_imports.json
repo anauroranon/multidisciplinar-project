@@ -1,0 +1,27 @@
+{
+  "binary": "samples/noexfil/ee12b2047c525c101e9560d864adca7c0ff87f9d5040d3100ae333003240dece",
+  "n_nodes": 7,
+  "nodes": {
+    "ee12b2047c525c101e9560d864adca7c0ff87f9d5040d3100ae333003240dece": {
+      "type": "binary"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libcause.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "0x0000000000: rfbInitServerWithPthreadsAndZRLE (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

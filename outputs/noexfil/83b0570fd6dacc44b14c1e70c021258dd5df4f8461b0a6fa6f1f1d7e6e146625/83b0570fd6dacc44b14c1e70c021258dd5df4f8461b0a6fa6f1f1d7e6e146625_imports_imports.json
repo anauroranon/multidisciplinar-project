@@ -1,0 +1,30 @@
+{
+  "binary": "samples/noexfil/83b0570fd6dacc44b14c1e70c021258dd5df4f8461b0a6fa6f1f1d7e6e146625",
+  "n_nodes": 8,
+  "nodes": {
+    "83b0570fd6dacc44b14c1e70c021258dd5df4f8461b0a6fa6f1f1d7e6e146625": {
+      "type": "binary"
+    },
+    "libm.so.6": {
+      "type": "lib"
+    },
+    "librt.so.1": {
+      "type": "lib"
+    },
+    "libdl.so.2": {
+      "type": "lib"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "ld-linux-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: memcpy (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

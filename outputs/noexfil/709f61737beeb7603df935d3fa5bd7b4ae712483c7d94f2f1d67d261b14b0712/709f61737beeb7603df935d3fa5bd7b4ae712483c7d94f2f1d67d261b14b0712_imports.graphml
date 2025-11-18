@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712">
+      <data key="d0">binary</data>
+    </node>
+    <node id="liblog.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libladder.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: rfbInitServerWithPthreadsAndZRLE (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="liblog.so" />
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="libladder.so" />
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="libm.so" />
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="libdl.so" />
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="libc.so" />
+    <edge source="709f61737beeb7603df935d3fa5bd7b4ae712483c7d94f2f1d67d261b14b0712" target="0x0000000000: rfbInitServerWithPthreadsAndZRLE (0x0000 bytes)" />
+  </graph>
+</graphml>

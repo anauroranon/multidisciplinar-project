@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="328632e853ff6427af9f35cb83a91d9e960f35d01188ee66d46ae9c7ce7c7827">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libselinux.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: putchar (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="328632e853ff6427af9f35cb83a91d9e960f35d01188ee66d46ae9c7ce7c7827" target="libselinux.so" />
+    <edge source="328632e853ff6427af9f35cb83a91d9e960f35d01188ee66d46ae9c7ce7c7827" target="libc.so" />
+    <edge source="328632e853ff6427af9f35cb83a91d9e960f35d01188ee66d46ae9c7ce7c7827" target="0x0000000000: putchar (0x0000 bytes)" />
+  </graph>
+</graphml>

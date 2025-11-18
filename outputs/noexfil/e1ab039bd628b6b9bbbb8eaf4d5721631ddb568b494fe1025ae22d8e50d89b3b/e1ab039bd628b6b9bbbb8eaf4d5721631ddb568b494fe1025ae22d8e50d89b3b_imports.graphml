@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b">
+      <data key="d0">binary</data>
+    </node>
+    <node id="liblog.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libandroid.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libstdc++.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libdl.so">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: vsprintf (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="liblog.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="libandroid.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="libstdc++.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="libm.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="libc.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="libdl.so" />
+    <edge source="e1ab039bd628b6b9bbbb8eaf4d5721631ddb568b494fe1025ae22d8e50d89b3b" target="0x0000000000: vsprintf (0x0000 bytes)" />
+  </graph>
+</graphml>

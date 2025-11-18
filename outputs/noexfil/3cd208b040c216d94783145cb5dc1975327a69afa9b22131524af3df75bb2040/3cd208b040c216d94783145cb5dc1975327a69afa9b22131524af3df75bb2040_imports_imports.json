@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/3cd208b040c216d94783145cb5dc1975327a69afa9b22131524af3df75bb2040",
+  "n_nodes": 4,
+  "nodes": {
+    "3cd208b040c216d94783145cb5dc1975327a69afa9b22131524af3df75bb2040": {
+      "type": "binary"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "0x0000000000: unsetenv (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

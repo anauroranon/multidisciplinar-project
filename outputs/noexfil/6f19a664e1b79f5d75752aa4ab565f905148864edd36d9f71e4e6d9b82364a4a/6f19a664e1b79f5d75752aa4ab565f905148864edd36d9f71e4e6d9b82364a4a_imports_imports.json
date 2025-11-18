@@ -1,0 +1,15 @@
+{
+  "binary": "samples/noexfil/6f19a664e1b79f5d75752aa4ab565f905148864edd36d9f71e4e6d9b82364a4a",
+  "n_nodes": 3,
+  "nodes": {
+    "6f19a664e1b79f5d75752aa4ab565f905148864edd36d9f71e4e6d9b82364a4a": {
+      "type": "binary"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: getpwnam_r (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

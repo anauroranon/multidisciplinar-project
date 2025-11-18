@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d10" for="node" attr.name="instr_count_est" attr.type="long" />
+  <key id="d9" for="node" attr.name="avg_bytes_per_block" attr.type="double" />
+  <key id="d8" for="node" attr.name="svc_count" attr.type="long" />
+  <key id="d7" for="node" attr.name="bl_indirect_count" attr.type="long" />
+  <key id="d6" for="node" attr.name="bl_count" attr.type="long" />
+  <key id="d5" for="node" attr.name="std_block_entropy" attr.type="double" />
+  <key id="d4" for="node" attr.name="avg_block_entropy" attr.type="double" />
+  <key id="d3" for="node" attr.name="total_bytes" attr.type="long" />
+  <key id="d2" for="node" attr.name="n_blocks" attr.type="long" />
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="addr" attr.type="long" />
+  <graph edgedefault="directed">
+    <node id="4198512">
+      <data key="d0">4198512</data>
+      <data key="d1">sub_401070</data>
+      <data key="d2">1</data>
+      <data key="d3">20</data>
+      <data key="d4">4.1219280948873624</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">19.99999998</data>
+      <data key="d10">5</data>
+    </node>
+    <node id="4198532">
+      <data key="d0">4198532</data>
+      <data key="d1">sub_401084</data>
+      <data key="d2">1</data>
+      <data key="d3">28</data>
+      <data key="d4">3.6820058147602133</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">27.999999971999998</data>
+      <data key="d10">7</data>
+    </node>
+    <node id="4198544">
+      <data key="d0">4198544</data>
+      <data key="d1">rfbInitServerWithPthreadsAndZRLE</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.625</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198560">
+      <data key="d0">4198560</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncStopServer</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198576">
+      <data key="d0">4198576</data>
+      <data key="d1">__cxa_finalize</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198592">
+      <data key="d0">4198592</data>
+      <data key="d1">rfbRegisterTightVNCFileTransferExtension</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198608">
+      <data key="d0">4198608</data>
+      <data key="d1">calloc</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198624">
+      <data key="d0">4198624</data>
+      <data key="d1">rfbMarkRectAsModified</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198640">
+      <data key="d0">4198640</data>
+      <data key="d1">rfbReverseConnection</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198656">
+      <data key="d0">4198656</data>
+      <data key="d1">rfbShutdownServer</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198672">
+      <data key="d0">4198672</data>
+      <data key="d1">rfbGetClientIterator</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.625</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198688">
+      <data key="d0">4198688</data>
+      <data key="d1">rfbClientIteratorNext</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198704">
+      <data key="d0">4198704</data>
+      <data key="d1">__stack_chk_fail</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198720">
+      <data key="d0">4198720</data>
+      <data key="d1">gettimeofday</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198736">
+      <data key="d0">4198736</data>
+      <data key="d1">__android_log_vprint</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198752">
+      <data key="d0">4198752</data>
+      <data key="d1">rfbRunEventLoop</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198768">
+      <data key="d0">4198768</data>
+      <data key="d1">rfbScreenCleanup</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198784">
+      <data key="d0">4198784</data>
+      <data key="d1">pthread_mutex_lock</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198800">
+      <data key="d0">4198800</data>
+      <data key="d1">rfbNewFramebuffer</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.625</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198816">
+      <data key="d0">4198816</data>
+      <data key="d1">strdup</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198832">
+      <data key="d0">4198832</data>
+      <data key="d1">rfbGetScreen</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198848">
+      <data key="d0">4198848</data>
+      <data key="d1">rfbReleaseClientIterator</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198864">
+      <data key="d0">4198864</data>
+      <data key="d1">malloc</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198880">
+      <data key="d0">4198880</data>
+      <data key="d1">memcpy</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.625</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198896">
+      <data key="d0">4198896</data>
+      <data key="d1">free</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198912">
+      <data key="d0">4198912</data>
+      <data key="d1">pthread_mutex_unlock</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198928">
+      <data key="d0">4198928</data>
+      <data key="d1">__cxa_atexit</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.625</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4198944">
+      <data key="d0">4198944</data>
+      <data key="d1">_start</data>
+      <data key="d2">1</data>
+      <data key="d3">12</data>
+      <data key="d4">2.751629167387823</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">11.999999987999999</data>
+      <data key="d10">3</data>
+    </node>
+    <node id="4198956">
+      <data key="d0">4198956</data>
+      <data key="d1">sub_40122c</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d4">2.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">3.9999999959999997</data>
+      <data key="d10">1</data>
+    </node>
+    <node id="4198960">
+      <data key="d0">4198960</data>
+      <data key="d1">sub_401230</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d4">0.8112781244591328</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">3.9999999959999997</data>
+      <data key="d10">1</data>
+    </node>
+    <node id="4198964">
+      <data key="d0">4198964</data>
+      <data key="d1">sub_401234</data>
+      <data key="d2">3</data>
+      <data key="d3">12</data>
+      <data key="d4">1.6666666666666667</data>
+      <data key="d5">0.23570226039551584</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">3.9999999986666666</data>
+      <data key="d10">3</data>
+    </node>
+    <node id="4198976">
+      <data key="d0">4198976</data>
+      <data key="d1">sub_401240</data>
+      <data key="d2">1</data>
+      <data key="d3">28</data>
+      <data key="d4">3.8212963336848613</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">27.999999971999998</data>
+      <data key="d10">7</data>
+    </node>
+    <node id="4199004">
+      <data key="d0">4199004</data>
+      <data key="d1">JNI_OnLoad</data>
+      <data key="d2">6</data>
+      <data key="d3">216</data>
+      <data key="d4">3.7608171433624116</data>
+      <data key="d5">1.1155551638356334</data>
+      <data key="d6">1</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">35.999999994</data>
+      <data key="d10">54</data>
+    </node>
+    <node id="4199220">
+      <data key="d0">4199220</data>
+      <data key="d1">sub_401334</data>
+      <data key="d2">4</data>
+      <data key="d3">172</data>
+      <data key="d4">3.771367813585499</data>
+      <data key="d5">1.536319792463233</data>
+      <data key="d6">2</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">42.99999998925</data>
+      <data key="d10">43</data>
+    </node>
+    <node id="4199392">
+      <data key="d0">4199392</data>
+      <data key="d1">sub_4013e0</data>
+      <data key="d2">4</data>
+      <data key="d3">172</data>
+      <data key="d4">3.7727554744350646</data>
+      <data key="d5">1.5381849149535154</data>
+      <data key="d6">2</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">42.99999998925</data>
+      <data key="d10">43</data>
+    </node>
+    <node id="4199564">
+      <data key="d0">4199564</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncStopServer</data>
+      <data key="d2">11</data>
+      <data key="d3">144</data>
+      <data key="d4">3.1872087071926773</data>
+      <data key="d5">0.7407964159661693</data>
+      <data key="d6">7</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">13.090909089719009</data>
+      <data key="d10">36</data>
+    </node>
+    <node id="4199692">
+      <data key="d0">4199692</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncStartServer</data>
+      <data key="d2">35</data>
+      <data key="d3">596</data>
+      <data key="d4">3.2062576929147406</data>
+      <data key="d5">0.9707784922480145</data>
+      <data key="d6">13</data>
+      <data key="d7">5</data>
+      <data key="d8">0</data>
+      <data key="d9">17.0285714280849</data>
+      <data key="d10">149</data>
+    </node>
+    <node id="4200268">
+      <data key="d0">4200268</data>
+      <data key="d1">sub_40174c</data>
+      <data key="d2">11</data>
+      <data key="d3">292</data>
+      <data key="d4">3.3990634125560417</data>
+      <data key="d5">0.9794417081623005</data>
+      <data key="d6">1</data>
+      <data key="d7">6</data>
+      <data key="d8">0</data>
+      <data key="d9">26.545454543041323</data>
+      <data key="d10">73</data>
+    </node>
+    <node id="4200560">
+      <data key="d0">4200560</data>
+      <data key="d1">sub_401870</data>
+      <data key="d2">11</data>
+      <data key="d3">272</data>
+      <data key="d4">3.374596161812336</data>
+      <data key="d5">0.9314371299783695</data>
+      <data key="d6">1</data>
+      <data key="d7">6</data>
+      <data key="d8">0</data>
+      <data key="d9">24.727272725024793</data>
+      <data key="d10">68</data>
+    </node>
+    <node id="4200832">
+      <data key="d0">4200832</data>
+      <data key="d1">sub_401980</data>
+      <data key="d2">12</data>
+      <data key="d3">296</data>
+      <data key="d4">3.4208527924445242</data>
+      <data key="d5">0.8992827739634807</data>
+      <data key="d6">1</data>
+      <data key="d7">7</data>
+      <data key="d8">0</data>
+      <data key="d9">24.66666666461111</data>
+      <data key="d10">74</data>
+    </node>
+    <node id="4201128">
+      <data key="d0">4201128</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncConnectReverse</data>
+      <data key="d2">10</data>
+      <data key="d3">196</data>
+      <data key="d4">3.6426324426944334</data>
+      <data key="d5">0.7524692515715904</data>
+      <data key="d6">1</data>
+      <data key="d7">2</data>
+      <data key="d8">0</data>
+      <data key="d9">19.59999999804</data>
+      <data key="d10">49</data>
+    </node>
+    <node id="4201304">
+      <data key="d0">4201304</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncNewFramebuffer</data>
+      <data key="d2">25</data>
+      <data key="d3">304</data>
+      <data key="d4">2.951713399048877</data>
+      <data key="d5">0.8711336231700285</data>
+      <data key="d6">15</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">12.1599999995136</data>
+      <data key="d10">76</data>
+    </node>
+    <node id="4201568">
+      <data key="d0">4201568</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncUpdateFramebuffer</data>
+      <data key="d2">12</data>
+      <data key="d3">216</data>
+      <data key="d4">3.536499077545592</data>
+      <data key="d5">0.7167025515066113</data>
+      <data key="d6">3</data>
+      <data key="d7">2</data>
+      <data key="d8">0</data>
+      <data key="d9">17.9999999985</data>
+      <data key="d10">54</data>
+    </node>
+    <node id="4201764">
+      <data key="d0">4201764</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncGetFramebufferWidth</data>
+      <data key="d2">4</data>
+      <data key="d3">40</data>
+      <data key="d4">2.894454882778696</data>
+      <data key="d5">0.14705168508545668</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">9.9999999975</data>
+      <data key="d10">10</data>
+    </node>
+    <node id="4201804">
+      <data key="d0">4201804</data>
+      <data key="d1">Java_quest_interfere_investigator_uqg_vncGetFramebufferHeight</data>
+      <data key="d2">4</data>
+      <data key="d3">40</data>
+      <data key="d4">2.894454882778696</data>
+      <data key="d5">0.14705168508545668</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">9.9999999975</data>
+      <data key="d10">10</data>
+    </node>
+    <node id="5242904">
+      <data key="d0">5242904</data>
+      <data key="d1">rfbInitServerWithPthreadsAndZRLE</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242912">
+      <data key="d0">5242912</data>
+      <data key="d1">__cxa_finalize</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242920">
+      <data key="d0">5242920</data>
+      <data key="d1">rfbRegisterTightVNCFileTransferExtension</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242928">
+      <data key="d0">5242928</data>
+      <data key="d1">calloc</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242936">
+      <data key="d0">5242936</data>
+      <data key="d1">rfbMarkRectAsModified</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242944">
+      <data key="d0">5242944</data>
+      <data key="d1">rfbReverseConnection</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242952">
+      <data key="d0">5242952</data>
+      <data key="d1">rfbShutdownServer</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242960">
+      <data key="d0">5242960</data>
+      <data key="d1">rfbGetClientIterator</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242968">
+      <data key="d0">5242968</data>
+      <data key="d1">rfbClientIteratorNext</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242976">
+      <data key="d0">5242976</data>
+      <data key="d1">__stack_chk_fail</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242984">
+      <data key="d0">5242984</data>
+      <data key="d1">gettimeofday</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242992">
+      <data key="d0">5242992</data>
+      <data key="d1">__android_log_vprint</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243000">
+      <data key="d0">5243000</data>
+      <data key="d1">rfbRunEventLoop</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243008">
+      <data key="d0">5243008</data>
+      <data key="d1">rfbScreenCleanup</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243016">
+      <data key="d0">5243016</data>
+      <data key="d1">pthread_mutex_lock</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243024">
+      <data key="d0">5243024</data>
+      <data key="d1">rfbNewFramebuffer</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243032">
+      <data key="d0">5243032</data>
+      <data key="d1">strdup</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243040">
+      <data key="d0">5243040</data>
+      <data key="d1">rfbGetScreen</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243048">
+      <data key="d0">5243048</data>
+      <data key="d1">rfbReleaseClientIterator</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243056">
+      <data key="d0">5243056</data>
+      <data key="d1">malloc</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243064">
+      <data key="d0">5243064</data>
+      <data key="d1">memcpy</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243072">
+      <data key="d0">5243072</data>
+      <data key="d1">free</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243080">
+      <data key="d0">5243080</data>
+      <data key="d1">pthread_mutex_unlock</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5243088">
+      <data key="d0">5243088</data>
+      <data key="d1">__cxa_atexit</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295632">
+      <data key="d0">6295632</data>
+      <data key="d1">UnresolvableJumpTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295640">
+      <data key="d0">6295640</data>
+      <data key="d1">UnresolvableCallTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <edge source="4199004" target="4198704" />
+    <edge source="4199220" target="4198704" />
+    <edge source="4199220" target="4198736" />
+    <edge source="4199392" target="4198736" />
+    <edge source="4199392" target="4198704" />
+    <edge source="4199564" target="4198896" />
+    <edge source="4199564" target="4198656" />
+    <edge source="4199564" target="4198768" />
+    <edge source="4199692" target="4198608" />
+    <edge source="4199692" target="4198560" />
+    <edge source="4199692" target="4198816" />
+    <edge source="4199692" target="4198592" />
+    <edge source="4199692" target="4198544" />
+    <edge source="4199692" target="4198704" />
+    <edge source="4199692" target="4198832" />
+    <edge source="4199692" target="4198864" />
+    <edge source="4199692" target="4198752" />
+    <edge source="4200268" target="4198704" />
+    <edge source="4200560" target="4198704" />
+    <edge source="4200832" target="4198704" />
+    <edge source="4201128" target="4198640" />
+    <edge source="4201304" target="4198672" />
+    <edge source="4201304" target="4198608" />
+    <edge source="4201304" target="4198688" />
+    <edge source="4201304" target="4198912" />
+    <edge source="4201304" target="4198848" />
+    <edge source="4201304" target="4198896" />
+    <edge source="4201304" target="4198784" />
+    <edge source="4201304" target="4198800" />
+    <edge source="4201568" target="4198720" />
+    <edge source="4201568" target="4198624" />
+    <edge source="4201568" target="4198880" />
+  </graph>
+</graphml>

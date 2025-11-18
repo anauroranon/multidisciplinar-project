@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/26d57b58443d84c703680bfb99dc77ae1514c6473cd7f1a609d6f81191458384",
+  "n_nodes": 4,
+  "nodes": {
+    "26d57b58443d84c703680bfb99dc77ae1514c6473cd7f1a609d6f81191458384": {
+      "type": "binary"
+    },
+    "libdl.so.2": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: __cxa_finalize (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

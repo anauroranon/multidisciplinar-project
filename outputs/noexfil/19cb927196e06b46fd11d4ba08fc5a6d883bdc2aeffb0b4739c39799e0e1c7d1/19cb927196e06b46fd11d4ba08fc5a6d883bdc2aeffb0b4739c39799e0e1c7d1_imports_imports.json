@@ -1,0 +1,27 @@
+{
+  "binary": "samples/noexfil/19cb927196e06b46fd11d4ba08fc5a6d883bdc2aeffb0b4739c39799e0e1c7d1",
+  "n_nodes": 7,
+  "nodes": {
+    "19cb927196e06b46fd11d4ba08fc5a6d883bdc2aeffb0b4739c39799e0e1c7d1": {
+      "type": "binary"
+    },
+    "libdl.so.2": {
+      "type": "lib"
+    },
+    "libstdc++.so.6": {
+      "type": "lib"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "ld-linux-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: malloc (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

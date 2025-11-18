@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/ffdb5fe4f7f07222e42c43efbb517a91e58dc91461c4ae1db40f5e0852261408",
+  "n_nodes": 6,
+  "nodes": {
+    "ffdb5fe4f7f07222e42c43efbb517a91e58dc91461c4ae1db40f5e0852261408": {
+      "type": "binary"
+    },
+    "libssl.so.3": {
+      "type": "lib"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libm.so.6": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: SSL_CTX_use_PrivateKey_file (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/16eecbbf518ea3973e153e433bfe46afa62e676e8706c84238768b17fed356d1",
+  "n_nodes": 6,
+  "nodes": {
+    "16eecbbf518ea3973e153e433bfe46afa62e676e8706c84238768b17fed356d1": {
+      "type": "binary"
+    },
+    "libssl.so.3": {
+      "type": "lib"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libgcc_s.so.1": {
+      "type": "lib"
+    },
+    "libc.musl-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: eventfd (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

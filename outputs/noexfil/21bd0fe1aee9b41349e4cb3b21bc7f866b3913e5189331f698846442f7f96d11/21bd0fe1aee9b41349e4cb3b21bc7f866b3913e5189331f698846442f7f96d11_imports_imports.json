@@ -1,0 +1,18 @@
+{
+  "binary": "samples/noexfil/21bd0fe1aee9b41349e4cb3b21bc7f866b3913e5189331f698846442f7f96d11",
+  "n_nodes": 4,
+  "nodes": {
+    "21bd0fe1aee9b41349e4cb3b21bc7f866b3913e5189331f698846442f7f96d11": {
+      "type": "binary"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "0x0000000000: pthread_sigmask (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

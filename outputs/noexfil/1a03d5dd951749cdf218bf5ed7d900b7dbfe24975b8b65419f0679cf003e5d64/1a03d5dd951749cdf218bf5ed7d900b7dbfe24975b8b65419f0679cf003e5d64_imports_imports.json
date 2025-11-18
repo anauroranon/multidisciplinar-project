@@ -1,0 +1,21 @@
+{
+  "binary": "samples/noexfil/1a03d5dd951749cdf218bf5ed7d900b7dbfe24975b8b65419f0679cf003e5d64",
+  "n_nodes": 5,
+  "nodes": {
+    "1a03d5dd951749cdf218bf5ed7d900b7dbfe24975b8b65419f0679cf003e5d64": {
+      "type": "binary"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "0x0000000000: memcpy (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

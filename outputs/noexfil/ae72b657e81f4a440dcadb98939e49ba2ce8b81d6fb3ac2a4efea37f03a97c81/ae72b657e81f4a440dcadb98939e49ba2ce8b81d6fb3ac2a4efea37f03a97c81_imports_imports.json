@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/ae72b657e81f4a440dcadb98939e49ba2ce8b81d6fb3ac2a4efea37f03a97c81",
+  "n_nodes": 6,
+  "nodes": {
+    "ae72b657e81f4a440dcadb98939e49ba2ce8b81d6fb3ac2a4efea37f03a97c81": {
+      "type": "binary"
+    },
+    "libm.so.6": {
+      "type": "lib"
+    },
+    "libpthread.so.0": {
+      "type": "lib"
+    },
+    "libc.so.6": {
+      "type": "lib"
+    },
+    "ld-linux-aarch64.so.1": {
+      "type": "lib"
+    },
+    "0x0000000000: htons (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

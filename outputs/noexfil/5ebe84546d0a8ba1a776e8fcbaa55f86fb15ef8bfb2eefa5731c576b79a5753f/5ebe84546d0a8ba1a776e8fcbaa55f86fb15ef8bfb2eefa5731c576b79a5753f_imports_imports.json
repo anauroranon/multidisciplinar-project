@@ -1,0 +1,51 @@
+{
+  "binary": "samples/noexfil/5ebe84546d0a8ba1a776e8fcbaa55f86fb15ef8bfb2eefa5731c576b79a5753f",
+  "n_nodes": 15,
+  "nodes": {
+    "5ebe84546d0a8ba1a776e8fcbaa55f86fb15ef8bfb2eefa5731c576b79a5753f": {
+      "type": "binary"
+    },
+    "libpcre.so": {
+      "type": "lib"
+    },
+    "libpcre2-8.so": {
+      "type": "lib"
+    },
+    "libaircrack-osdep-1.7.0.so": {
+      "type": "lib"
+    },
+    "libnl-3.so": {
+      "type": "lib"
+    },
+    "libnl-genl-3.so": {
+      "type": "lib"
+    },
+    "libsqlite3.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libz.so.1": {
+      "type": "lib"
+    },
+    "libssl.so.3": {
+      "type": "lib"
+    },
+    "libcrypto.so.3": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libc++_shared.so": {
+      "type": "lib"
+    },
+    "0x0000000000: __libc_init (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

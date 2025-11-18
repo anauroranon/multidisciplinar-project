@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004">
+      <data key="d0">binary</data>
+    </node>
+    <node id="libcurl.so.4">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libjansson.so.4">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libpthread.so.0">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libcrypto.so.1.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libssl.so.1.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libz.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libstdc++.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libm.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libomp.so.5">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libgcc_s.so.1">
+      <data key="d0">lib</data>
+    </node>
+    <node id="libc.so.6">
+      <data key="d0">lib</data>
+    </node>
+    <node id="0x0000000000: abort (0x0000 bytes)">
+      <data key="d0">import</data>
+    </node>
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libcurl.so.4" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libjansson.so.4" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libpthread.so.0" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libcrypto.so.1.1" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libssl.so.1.1" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libz.so.1" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libstdc++.so.6" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libm.so.6" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libomp.so.5" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libgcc_s.so.1" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="libc.so.6" />
+    <edge source="56f71fa313d5f942283ea1d8f02f679088c612f08607928f33612d4f387fb004" target="0x0000000000: abort (0x0000 bytes)" />
+  </graph>
+</graphml>

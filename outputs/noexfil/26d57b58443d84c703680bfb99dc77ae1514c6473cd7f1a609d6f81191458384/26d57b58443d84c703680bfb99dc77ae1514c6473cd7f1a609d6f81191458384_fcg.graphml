@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d10" for="node" attr.name="instr_count_est" attr.type="long" />
+  <key id="d9" for="node" attr.name="avg_bytes_per_block" attr.type="double" />
+  <key id="d8" for="node" attr.name="svc_count" attr.type="long" />
+  <key id="d7" for="node" attr.name="bl_indirect_count" attr.type="long" />
+  <key id="d6" for="node" attr.name="bl_count" attr.type="long" />
+  <key id="d5" for="node" attr.name="std_block_entropy" attr.type="double" />
+  <key id="d4" for="node" attr.name="avg_block_entropy" attr.type="double" />
+  <key id="d3" for="node" attr.name="total_bytes" attr.type="long" />
+  <key id="d2" for="node" attr.name="n_blocks" attr.type="long" />
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="addr" attr.type="long" />
+  <graph edgedefault="directed">
+    <node id="4196040">
+      <data key="d0">4196040</data>
+      <data key="d1">_init</data>
+      <data key="d2">2</data>
+      <data key="d3">20</data>
+      <data key="d4">3.0110276044371003</data>
+      <data key="d5">0.011027604437100269</data>
+      <data key="d6">1</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">9.999999995</data>
+      <data key="d10">5</data>
+    </node>
+    <node id="4196064">
+      <data key="d0">4196064</data>
+      <data key="d1">$x</data>
+      <data key="d2">1</data>
+      <data key="d3">20</data>
+      <data key="d4">3.984183719779189</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">19.99999998</data>
+      <data key="d10">5</data>
+    </node>
+    <node id="4196084">
+      <data key="d0">4196084</data>
+      <data key="d1">sub_4006f4</data>
+      <data key="d2">1</data>
+      <data key="d3">28</data>
+      <data key="d4">3.5836169753972325</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">27.999999971999998</data>
+      <data key="d10">7</data>
+    </node>
+    <node id="4196096">
+      <data key="d0">4196096</data>
+      <data key="d1">__cxa_finalize</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.452819531114783</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4196112">
+      <data key="d0">4196112</data>
+      <data key="d1">dlsym</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4196128">
+      <data key="d0">4196128</data>
+      <data key="d1">strncmp</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4196144">
+      <data key="d0">4196144</data>
+      <data key="d1">__gmon_start__</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.75</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="4196160">
+      <data key="d0">4196160</data>
+      <data key="d1">call_weak_fn</data>
+      <data key="d2">3</data>
+      <data key="d3">20</data>
+      <data key="d4">2.0391641537282514</data>
+      <data key="d5">0.4570541349440115</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">6.666666664444445</data>
+      <data key="d10">5</data>
+    </node>
+    <node id="4196180">
+      <data key="d0">4196180</data>
+      <data key="d1">deregister_tm_clones</data>
+      <data key="d2">5</data>
+      <data key="d3">68</data>
+      <data key="d4">2.6566339957542313</data>
+      <data key="d5">0.7754162504987648</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">13.59999999728</data>
+      <data key="d10">17</data>
+    </node>
+    <node id="4196248">
+      <data key="d0">4196248</data>
+      <data key="d1">register_tm_clones</data>
+      <data key="d2">5</data>
+      <data key="d3">72</data>
+      <data key="d4">2.672842229390157</data>
+      <data key="d5">0.8160007407873455</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">14.39999999712</data>
+      <data key="d10">18</data>
+    </node>
+    <node id="4196320">
+      <data key="d0">4196320</data>
+      <data key="d1">__do_global_dtors_aux</data>
+      <data key="d2">6</data>
+      <data key="d3">84</data>
+      <data key="d4">3.1302334610647713</data>
+      <data key="d5">0.9388702962609503</data>
+      <data key="d6">2</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">13.999999997666666</data>
+      <data key="d10">21</data>
+    </node>
+    <node id="4196392">
+      <data key="d0">4196392</data>
+      <data key="d1">frame_dummy</data>
+      <data key="d2">4</data>
+      <data key="d3">48</data>
+      <data key="d4">2.8600877607321724</data>
+      <data key="d5">0.6298696447470075</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">0</data>
+      <data key="d9">11.999999997</data>
+      <data key="d10">12</data>
+    </node>
+    <node id="4196440">
+      <data key="d0">4196440</data>
+      <data key="d1">readdir</data>
+      <data key="d2">43</data>
+      <data key="d3">716</data>
+      <data key="d4">3.231141457433577</data>
+      <data key="d5">0.6587437113104948</data>
+      <data key="d6">18</data>
+      <data key="d7">3</data>
+      <data key="d8">0</data>
+      <data key="d9">16.65116279031044</data>
+      <data key="d10">179</data>
+    </node>
+    <node id="4197124">
+      <data key="d0">4197124</data>
+      <data key="d1">_fini</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d4">3.452819531114783</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">15.999999983999999</data>
+      <data key="d10">4</data>
+    </node>
+    <node id="5242880">
+      <data key="d0">5242880</data>
+      <data key="d1">dlsym</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="5242888">
+      <data key="d0">5242888</data>
+      <data key="d1">strncmp</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295632">
+      <data key="d0">6295632</data>
+      <data key="d1">UnresolvableJumpTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <node id="6295640">
+      <data key="d0">6295640</data>
+      <data key="d1">UnresolvableCallTarget</data>
+      <data key="d2">1</data>
+      <data key="d3">0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">0.0</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d8">0</data>
+      <data key="d9">0.0</data>
+      <data key="d10">0</data>
+    </node>
+    <edge source="4196040" target="4196160" />
+    <edge source="4196320" target="4196096" />
+    <edge source="4196320" target="4196180" />
+    <edge source="4196440" target="4196128" />
+    <edge source="4196440" target="4196112" />
+  </graph>
+</graphml>

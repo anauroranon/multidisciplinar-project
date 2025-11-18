@@ -1,0 +1,30 @@
+{
+  "binary": "samples/noexfil/2857101d18a9af734c296be1845304cc50156298846fe99ebc1629f69065a770",
+  "n_nodes": 8,
+  "nodes": {
+    "2857101d18a9af734c296be1845304cc50156298846fe99ebc1629f69065a770": {
+      "type": "binary"
+    },
+    "liblog.so": {
+      "type": "lib"
+    },
+    "libandroid.so": {
+      "type": "lib"
+    },
+    "libstdc++.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "0x0000000000: strerror (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}

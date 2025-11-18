@@ -1,0 +1,24 @@
+{
+  "binary": "samples/noexfil/4467937f64099e184f6e09af10cb4ba9cb5fed140b9c34fc5dea97d31b18d372",
+  "n_nodes": 6,
+  "nodes": {
+    "4467937f64099e184f6e09af10cb4ba9cb5fed140b9c34fc5dea97d31b18d372": {
+      "type": "binary"
+    },
+    "libstdc++.so": {
+      "type": "lib"
+    },
+    "libm.so": {
+      "type": "lib"
+    },
+    "libc.so": {
+      "type": "lib"
+    },
+    "libdl.so": {
+      "type": "lib"
+    },
+    "0x0000000000: __cxa_finalize (0x0000 bytes)": {
+      "type": "import"
+    }
+  }
+}
