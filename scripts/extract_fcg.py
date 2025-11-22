@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
 """
-extract_features.py
 
-Estrae un Function Call Graph (FCG) di base e alcune feature per funzione
-da un ELF ARM/Linux usando angr. Salva i grafi in NetworkX + JSON.
+extract_fcg.py
+
+Estrae un Function Call Graph (FCG) di base e un piccolo insieme di feature
+per funzione a partire da un ELF ARM/Linux usando angr. I risultati vengono
+serializzati sia come grafo NetworkX (GraphML) sia come JSON comodo da usare
+nelle fasi successive della pipeline.
 
 Uso:
-    python3 scripts/extract_features.py --binary ../examples/test_bin --outdir ../outputs/graphs
+
+python3 scripts/extract_features.py --binary ../examples/test_bin --outdir ../outputs/graphs
+
+FCG nodes = functions.
+A function typically contains:
+- many basic blocks
+- dozens or hundreds of instructions
+- a large accumulated feature set (entropy aggregated across blocks, counts, etc.)
+
 """
 import argparse
 import json
-import math
 import os
 from tqdm import tqdm
 from pathlib import Path
@@ -20,7 +30,7 @@ import angr
 import networkx as nx
 import numpy as np
 
-# try optional capstone import for fallback disassembly
+# Capstone è opzionale: lo usiamo solo come fallback se la disassembly di angr non è disponibile per quel basic block.
 try:
     import capstone  # type: ignore
     HAS_CAPSTONE = True
@@ -31,6 +41,7 @@ except Exception:
 def shannon_entropy(data_bytes: bytes) -> float:
     if not data_bytes:
         return 0.0
+    
     counts = np.bincount(np.frombuffer(data_bytes, dtype=np.uint8), minlength=256)
     probs = counts[counts > 0] / float(len(data_bytes))
     return -float(np.sum(probs * np.log2(probs)))
@@ -38,15 +49,16 @@ def shannon_entropy(data_bytes: bytes) -> float:
 
 def try_get_insns_from_block(proj, blk):
     """
-    Return a list-like of lightweight insn objects with attributes:
+    Given a basic block di angr ('blk'), return a list-like of lightweight insn objects (pseudo-istruzioni) with attributes:
       - mnemonic (str)
       - operands (list-like or empty)  (may not have imm)
       - op_str (str)  (string operands)
     Prefer angr's capstone wrapper (blk.capstone.insns). If not available,
     try capstone python binding to disassemble the bytes as fallback.
+    
     If nothing works, return None.
     """
-    # 1) prefer angr's capstone wrapper
+    # 1) Prefer angr's capstone wrapper
     try:
         if hasattr(blk, "capstone") and getattr(blk.capstone, "insns", None):
             return blk.capstone.insns
@@ -57,8 +69,10 @@ def try_get_insns_from_block(proj, blk):
     if not HAS_CAPSTONE:
         return None
 
+    # Retrieving the architecture name
     archname = proj.arch.name.lower() if hasattr(proj, "arch") else ""
     cs = None
+    
     try:
         if "aarch64" in archname or "arm64" in archname or "aarch" in archname:
             cs = capstone.Cs(capstone.CS_ARCH_ARM64, capstone.CS_MODE_LITTLE_ENDIAN)
@@ -162,34 +176,48 @@ def extract_function_features(func, proj):
     Compute per-function features using angr.Function and project.
     Returns a dict of features.
     """
-    feats = {}
-    feats["addr"] = func.addr
-    feats["name"] = getattr(func, "name", hex(func.addr))
+    feats = {} # Dictionary that will contain every function extracted
+    
+    feats["addr"] = func.addr # Address
+    feats["name"] = getattr(func, "name", hex(func.addr)) # Name of the function (symbolic name)
+    
+    # Returns the set of addresses that lead at each basic block of the function
     try:
-        block_addrs = list(func.block_addrs_set)
+        block_addrs = list(func.block_addrs_set) 
     except Exception:
         block_addrs = []
-    feats["n_blocks"] = len(block_addrs)
+    feats["n_blocks"] = len(block_addrs) #
 
-    total_bytes = 0
-    instr_count_est = 0
-    bl_count = 0
-    bl_indirect_count = 0
-    svc_count = 0
-    block_entropies = []
+    # Initialize accumulators for all metrics we will compute across blocks
+    total_bytes = 0                 # total number of bytes for the whole function
+    instr_count_est = 0             # estimated number of instructions
+    bl_count = 0                    # direct call instructions (bl/blx)
+    bl_indirect_count = 0           # indirect call instructions (blr/bx)
+    svc_count = 0                   # supervisor/syscall instructions
+    block_entropies = []            # entropy per block to compute mean/std
 
-    for baddr in block_addrs:
+    for baddr in block_addrs: # For each block of function, compute
         try:
+            # Ask angr to reconstruct the basic block at address baddr.
+            # This gives the raw bytes and its disassembled form.
             blk = proj.factory.block(baddr)
         except Exception:
             continue
-        bbytes = blk.bytes or b""
-        total_bytes += len(bbytes)
-        block_entropies.append(shannon_entropy(bbytes))
+        
+        bbytes = blk.bytes or b"" # Extract raw bytes for the block; fallback to empty if unavailable
+        total_bytes += len(bbytes) # Accumulate byte size
+        block_entropies.append(shannon_entropy(bbytes))  
 
-        insns = try_get_insns_from_block(proj, blk)
-        if insns is not None:
-            tinst, bl_d, bl_i, svc_c = analyze_insns_list(insns)
+        insns = try_get_insns_from_block(proj, blk) # Try to get a list of instructions for this block (capstone or fallback)
+        
+        if insns is not None: 
+             # Analyze this block's instruction list:
+            #  tinst = total instruction count
+            #  bl_d  = number of direct calls (bl/blx)
+            #  bl_i  = number of indirect calls (blr/bx)
+            #  svc_c = number of svc instructions
+            
+            tinst, bl_d, bl_i, svc_c = analyze_insns_list(insns) # Number of 
             instr_count_est += int(tinst)
             bl_count += int(bl_d)
             bl_indirect_count += int(bl_i)
@@ -198,6 +226,7 @@ def extract_function_features(func, proj):
             # fallback: cannot disassemble -> leave zeros / best-effort
             pass
 
+    # Calculating the overall function features
     feats["total_bytes"] = total_bytes
     feats["avg_block_entropy"] = float(np.mean(block_entropies)) if block_entropies else 0.0
     feats["std_block_entropy"] = float(np.std(block_entropies)) if block_entropies else 0.0
@@ -212,62 +241,81 @@ def extract_function_features(func, proj):
 
 
 def build_fcg_and_features(binary_path, outdir, load_options=None):
+    """
+    Costruisce un Function Call Graph (FCG) dal binario e associa a ogni nodo
+    (funzione) le feature statiche calcolate sopra.
+
+    Passi:
+      1) carica il binario in angr
+      2) esegue CFGFast per riempire la knowledge base
+      3) crea un grafo diretto NetworkX con:
+            nodi = indirizzi di funzione
+            archi = chiamate (BL/BLX/BLR/BX) risolte staticamente
+      4) esporta:
+            <outdir>/<base>_fcg.graphml
+            <outdir>/<base>_fcg.json
+    """
     print(f"[+] Loading {binary_path} with angr...")
+    
+    ### MAIN COMPUTATION
     proj = angr.Project(binary_path, auto_load_libs=False, load_options=load_options or {})
-
-    # print detected architecture (helpful)
-    archname = proj.arch.name if hasattr(proj, "arch") else "unknown"
-    print(f"[+] Detected architecture: {archname}")
-
-    print("[+] Building CFG (CFGFast) — questo può richiedere tempo...")
-    cfg = proj.analyses.CFGFast(normalize=True)
-    kb = cfg.kb
+    cfg = proj.analyses.CFGFast(normalize=True) # Again takes the fcg
+    
+    kb = cfg.kb # Extracting the knowledge ase from the CFG. È una struttura dati che contiene tutto ciò che angr ha estratto finora sul binario (funzioni, simboli, indirizzi, librerie ecc.)
 
     print("[+] Estrazione funzioni e feature...")
-    functions = list(kb.functions.values())
-    addr2func = {f.addr: f for f in functions}
+    functions = list(kb.functions.values()) # Function extraction from knowledge base, to build Function Call garph
+    addr2func = {f.addr: f for f in functions} # Virtual address of the function
 
-    G = nx.DiGraph()
+    G = nx.DiGraph() # graph initializatio
+    
     sample_id = Path(binary_path).stem
     saver = PartialSaver(out_dir=outdir, sample_id=sample_id, flush_every=200)
 
     # create nodes with features
-    for f in tqdm(functions, desc="funzioni"):
-        feats = extract_function_features(f, proj)
-        G.add_node(feats["addr"], **feats)
+    for f in tqdm(functions, desc="funzioni"): # Each function is a node
+        feats = extract_function_features(f, proj) # Extraction of function from angr extraction and function itself
+        G.add_node(feats["addr"], **feats) # Added to graph
 
     # build edges: attempt resolving BL/BLX immediates to functions
     print("[+] Costruzione archi chiamata (tentativo statico usando BL/BLX immediate)...")
-    for f in tqdm(functions, desc="edge-building"):
+    for f in tqdm(functions, desc="edge-building"): # Retrieving functions again
         try:
-            block_addrs = list(f.block_addrs_set)
+            block_addrs = list(f.block_addrs_set) # Taking the blocks of every function
         except Exception:
             block_addrs = []
-        for baddr in block_addrs:
+            
+        for baddr in block_addrs: # Iterating each address block
             try:
-                blk = proj.factory.block(baddr)
+                blk = proj.factory.block(baddr) # Taking the basic block content
             except Exception:
                 continue
-            insns = try_get_insns_from_block(proj, blk)
+            
+            insns = try_get_insns_from_block(proj, blk) # Taking the instructions 
             if insns is None:
                 continue
-            for insn in insns:
+            
+            for insn in insns: # Iterating the instructions
                 try:
-                    mnem = insn.mnemonic.lower()
+                    mnem = insn.mnemonic.lower() # Takes the mnemonic name of the instruction 
                 except Exception:
                     continue
-                if mnem in ("bl", "blx"):
+                
+                if mnem in ("bl", "blx"): # If our instructions that call functions
                     # try operand imm first
                     target = None
+                    
                     try:
-                        if getattr(insn, "operands", None):
+                        if getattr(insn, "operands", None): # Taking the operands of the instruction
                             op0 = insn.operands[0]
-                            target = getattr(op0, "imm", None)
+                            target = getattr(op0, "imm", None) 
+                            
                     except Exception:
                         target = None
-                    # fallback: parse op_str hex
+                        
+                    # fallback: parse op_str hex 
                     if target is None:
-                        op_str = getattr(insn, "op_str", "")
+                        op_str = getattr(insn, "op_str", "") # Takes the string and iterate it
                         if op_str:
                             s = op_str.split()[0].lstrip("#")
                             if s.startswith("0x"):
@@ -275,7 +323,7 @@ def build_fcg_and_features(binary_path, outdir, load_options=None):
                                     target = int(s, 16)
                                 except Exception:
                                     target = None
-                    if target:
+                    if target: # After found the target function, build the edges
                         # map target to function
                         if target in addr2func:
                             G.add_edge(f.addr, target)

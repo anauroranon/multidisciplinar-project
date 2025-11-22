@@ -17,13 +17,181 @@
     <node id="libc.so">
       <data key="d0">lib</data>
     </node>
-    <node id="0x0000000000: __cxa_finalize (0x0000 bytes)">
+    <node id="__cxa_finalize">
+      <data key="d0">import</data>
+    </node>
+    <node id="__cxa_atexit">
+      <data key="d0">import</data>
+    </node>
+    <node id="__register_atfork">
+      <data key="d0">import</data>
+    </node>
+    <node id="__stack_chk_fail">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_mutex_lock">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_mutex_unlock">
+      <data key="d0">import</data>
+    </node>
+    <node id="__android_log_print">
+      <data key="d0">import</data>
+    </node>
+    <node id="malloc">
+      <data key="d0">import</data>
+    </node>
+    <node id="free">
+      <data key="d0">import</data>
+    </node>
+    <node id="posix_memalign">
+      <data key="d0">import</data>
+    </node>
+    <node id="memset">
+      <data key="d0">import</data>
+    </node>
+    <node id="vfprintf">
+      <data key="d0">import</data>
+    </node>
+    <node id="fputc">
+      <data key="d0">import</data>
+    </node>
+    <node id="vasprintf">
+      <data key="d0">import</data>
+    </node>
+    <node id="android_set_abort_message">
+      <data key="d0">import</data>
+    </node>
+    <node id="openlog">
+      <data key="d0">import</data>
+    </node>
+    <node id="syslog">
+      <data key="d0">import</data>
+    </node>
+    <node id="closelog">
+      <data key="d0">import</data>
+    </node>
+    <node id="abort">
+      <data key="d0">import</data>
+    </node>
+    <node id="strlen">
+      <data key="d0">import</data>
+    </node>
+    <node id="realloc">
+      <data key="d0">import</data>
+    </node>
+    <node id="memmove">
+      <data key="d0">import</data>
+    </node>
+    <node id="__memmove_chk">
+      <data key="d0">import</data>
+    </node>
+    <node id="__strlen_chk">
+      <data key="d0">import</data>
+    </node>
+    <node id="memchr">
+      <data key="d0">import</data>
+    </node>
+    <node id="__vsnprintf_chk">
+      <data key="d0">import</data>
+    </node>
+    <node id="memcpy">
+      <data key="d0">import</data>
+    </node>
+    <node id="strcmp">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_getspecific">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_once">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_setspecific">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_key_delete">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_key_create">
+      <data key="d0">import</data>
+    </node>
+    <node id="getauxval">
+      <data key="d0">import</data>
+    </node>
+    <node id="__system_property_get">
+      <data key="d0">import</data>
+    </node>
+    <node id="strncmp">
+      <data key="d0">import</data>
+    </node>
+    <node id="fprintf">
+      <data key="d0">import</data>
+    </node>
+    <node id="fflush">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_rwlock_wrlock">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_rwlock_unlock">
+      <data key="d0">import</data>
+    </node>
+    <node id="dl_iterate_phdr">
+      <data key="d0">import</data>
+    </node>
+    <node id="pthread_rwlock_rdlock">
+      <data key="d0">import</data>
+    </node>
+    <node id="fwrite">
       <data key="d0">import</data>
     </node>
     <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="liblog.so" />
     <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="libm.so" />
     <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="libdl.so" />
     <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="libc.so" />
-    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="0x0000000000: __cxa_finalize (0x0000 bytes)" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__cxa_finalize" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__cxa_atexit" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__register_atfork" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__stack_chk_fail" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_mutex_lock" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_mutex_unlock" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__android_log_print" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="malloc" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="free" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="posix_memalign" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="memset" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="vfprintf" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="fputc" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="vasprintf" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="android_set_abort_message" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="openlog" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="syslog" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="closelog" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="abort" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="strlen" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="realloc" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="memmove" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__memmove_chk" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__strlen_chk" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="memchr" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__vsnprintf_chk" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="memcpy" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="strcmp" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_getspecific" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_once" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_setspecific" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_key_delete" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_key_create" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="getauxval" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="__system_property_get" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="strncmp" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="fprintf" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="fflush" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_rwlock_wrlock" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_rwlock_unlock" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="dl_iterate_phdr" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="pthread_rwlock_rdlock" />
+    <edge source="2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2" target="fwrite" />
   </graph>
 </graphml>

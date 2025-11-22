@@ -1,6 +1,6 @@
 {
   "binary": "samples/noexfil/2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2",
-  "n_nodes": 6,
+  "n_nodes": 48,
   "nodes": {
     "2f55eafd6a7b4877ad7334af1036945d1c6c406c614d784b87a4b265aab10bf2": {
       "type": "binary"
@@ -17,7 +17,133 @@
     "libc.so": {
       "type": "lib"
     },
-    "0x0000000000: __cxa_finalize (0x0000 bytes)": {
+    "__cxa_finalize": {
+      "type": "import"
+    },
+    "__cxa_atexit": {
+      "type": "import"
+    },
+    "__register_atfork": {
+      "type": "import"
+    },
+    "__stack_chk_fail": {
+      "type": "import"
+    },
+    "pthread_mutex_lock": {
+      "type": "import"
+    },
+    "pthread_mutex_unlock": {
+      "type": "import"
+    },
+    "__android_log_print": {
+      "type": "import"
+    },
+    "malloc": {
+      "type": "import"
+    },
+    "free": {
+      "type": "import"
+    },
+    "posix_memalign": {
+      "type": "import"
+    },
+    "memset": {
+      "type": "import"
+    },
+    "vfprintf": {
+      "type": "import"
+    },
+    "fputc": {
+      "type": "import"
+    },
+    "vasprintf": {
+      "type": "import"
+    },
+    "android_set_abort_message": {
+      "type": "import"
+    },
+    "openlog": {
+      "type": "import"
+    },
+    "syslog": {
+      "type": "import"
+    },
+    "closelog": {
+      "type": "import"
+    },
+    "abort": {
+      "type": "import"
+    },
+    "strlen": {
+      "type": "import"
+    },
+    "realloc": {
+      "type": "import"
+    },
+    "memmove": {
+      "type": "import"
+    },
+    "__memmove_chk": {
+      "type": "import"
+    },
+    "__strlen_chk": {
+      "type": "import"
+    },
+    "memchr": {
+      "type": "import"
+    },
+    "__vsnprintf_chk": {
+      "type": "import"
+    },
+    "memcpy": {
+      "type": "import"
+    },
+    "strcmp": {
+      "type": "import"
+    },
+    "pthread_getspecific": {
+      "type": "import"
+    },
+    "pthread_once": {
+      "type": "import"
+    },
+    "pthread_setspecific": {
+      "type": "import"
+    },
+    "pthread_key_delete": {
+      "type": "import"
+    },
+    "pthread_key_create": {
+      "type": "import"
+    },
+    "getauxval": {
+      "type": "import"
+    },
+    "__system_property_get": {
+      "type": "import"
+    },
+    "strncmp": {
+      "type": "import"
+    },
+    "fprintf": {
+      "type": "import"
+    },
+    "fflush": {
+      "type": "import"
+    },
+    "pthread_rwlock_wrlock": {
+      "type": "import"
+    },
+    "pthread_rwlock_unlock": {
+      "type": "import"
+    },
+    "dl_iterate_phdr": {
+      "type": "import"
+    },
+    "pthread_rwlock_rdlock": {
+      "type": "import"
+    },
+    "fwrite": {
       "type": "import"
     }
   }

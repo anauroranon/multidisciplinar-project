@@ -1,6 +1,6 @@
 {
   "binary": "samples/noexfil/43c1f88d46c495badc478882a1afde64acaaa2f97475ea23d1402e1823bfc27e",
-  "n_nodes": 5,
+  "n_nodes": 137,
   "nodes": {
     "43c1f88d46c495badc478882a1afde64acaaa2f97475ea23d1402e1823bfc27e": {
       "type": "binary"
@@ -14,7 +14,403 @@
     "libc.so": {
       "type": "lib"
     },
-    "0x0000000000: memcpy (0x0000 bytes)": {
+    "memcpy": {
+      "type": "import"
+    },
+    "fopen": {
+      "type": "import"
+    },
+    "memchr": {
+      "type": "import"
+    },
+    "freelocale": {
+      "type": "import"
+    },
+    "__ctype_get_mb_cur_max": {
+      "type": "import"
+    },
+    "pthread_detach": {
+      "type": "import"
+    },
+    "strtold_l": {
+      "type": "import"
+    },
+    "towlower": {
+      "type": "import"
+    },
+    "mbrtowc": {
+      "type": "import"
+    },
+    "btowc": {
+      "type": "import"
+    },
+    "pthread_mutex_destroy": {
+      "type": "import"
+    },
+    "wcstoull": {
+      "type": "import"
+    },
+    "pthread_mutexattr_settype": {
+      "type": "import"
+    },
+    "syslog": {
+      "type": "import"
+    },
+    "wmemmove": {
+      "type": "import"
+    },
+    "strftime": {
+      "type": "import"
+    },
+    "pthread_join": {
+      "type": "import"
+    },
+    "strtoll_l": {
+      "type": "import"
+    },
+    "pthread_mutex_trylock": {
+      "type": "import"
+    },
+    "wcslen": {
+      "type": "import"
+    },
+    "iswalpha": {
+      "type": "import"
+    },
+    "__memmove_chk": {
+      "type": "import"
+    },
+    "sscanf": {
+      "type": "import"
+    },
+    "free": {
+      "type": "import"
+    },
+    "fread": {
+      "type": "import"
+    },
+    "uselocale": {
+      "type": "import"
+    },
+    "sysconf": {
+      "type": "import"
+    },
+    "strtold": {
+      "type": "import"
+    },
+    "calloc": {
+      "type": "import"
+    },
+    "strcmp": {
+      "type": "import"
+    },
+    "malloc": {
+      "type": "import"
+    },
+    "wcstoll": {
+      "type": "import"
+    },
+    "strxfrm": {
+      "type": "import"
+    },
+    "wmemset": {
+      "type": "import"
+    },
+    "nanosleep": {
+      "type": "import"
+    },
+    "pthread_cond_destroy": {
+      "type": "import"
+    },
+    "isxdigit": {
+      "type": "import"
+    },
+    "wcstold": {
+      "type": "import"
+    },
+    "wcstoul": {
+      "type": "import"
+    },
+    "chmod": {
+      "type": "import"
+    },
+    "pthread_setspecific": {
+      "type": "import"
+    },
+    "mbrlen": {
+      "type": "import"
+    },
+    "posix_memalign": {
+      "type": "import"
+    },
+    "sched_yield": {
+      "type": "import"
+    },
+    "memmove": {
+      "type": "import"
+    },
+    "pthread_once": {
+      "type": "import"
+    },
+    "strlen": {
+      "type": "import"
+    },
+    "wcscoll": {
+      "type": "import"
+    },
+    "mbsnrtowcs": {
+      "type": "import"
+    },
+    "isupper": {
+      "type": "import"
+    },
+    "pthread_self": {
+      "type": "import"
+    },
+    "iswcntrl": {
+      "type": "import"
+    },
+    "strstr": {
+      "type": "import"
+    },
+    "pthread_mutexattr_destroy": {
+      "type": "import"
+    },
+    "strtok": {
+      "type": "import"
+    },
+    "fclose": {
+      "type": "import"
+    },
+    "realloc": {
+      "type": "import"
+    },
+    "strtod": {
+      "type": "import"
+    },
+    "iswpunct": {
+      "type": "import"
+    },
+    "dladdr": {
+      "type": "import"
+    },
+    "mbtowc": {
+      "type": "import"
+    },
+    "fputc": {
+      "type": "import"
+    },
+    "wmemcpy": {
+      "type": "import"
+    },
+    "snprintf": {
+      "type": "import"
+    },
+    "pthread_equal": {
+      "type": "import"
+    },
+    "iswdigit": {
+      "type": "import"
+    },
+    "strtol": {
+      "type": "import"
+    },
+    "ftell": {
+      "type": "import"
+    },
+    "remove": {
+      "type": "import"
+    },
+    "towupper": {
+      "type": "import"
+    },
+    "pthread_mutex_unlock": {
+      "type": "import"
+    },
+    "strcoll": {
+      "type": "import"
+    },
+    "pthread_cond_wait": {
+      "type": "import"
+    },
+    "wctob": {
+      "type": "import"
+    },
+    "pthread_cond_timedwait": {
+      "type": "import"
+    },
+    "pthread_create": {
+      "type": "import"
+    },
+    "pthread_cond_broadcast": {
+      "type": "import"
+    },
+    "fwrite": {
+      "type": "import"
+    },
+    "vsnprintf": {
+      "type": "import"
+    },
+    "android_set_abort_message": {
+      "type": "import"
+    },
+    "iswblank": {
+      "type": "import"
+    },
+    "newlocale": {
+      "type": "import"
+    },
+    "wmemcmp": {
+      "type": "import"
+    },
+    "vasprintf": {
+      "type": "import"
+    },
+    "syscall": {
+      "type": "import"
+    },
+    "memset": {
+      "type": "import"
+    },
+    "pthread_mutex_init": {
+      "type": "import"
+    },
+    "pthread_cond_signal": {
+      "type": "import"
+    },
+    "wcstof": {
+      "type": "import"
+    },
+    "pthread_getspecific": {
+      "type": "import"
+    },
+    "wmemchr": {
+      "type": "import"
+    },
+    "iswprint": {
+      "type": "import"
+    },
+    "islower": {
+      "type": "import"
+    },
+    "abort": {
+      "type": "import"
+    },
+    "__cxa_atexit": {
+      "type": "import"
+    },
+    "closelog": {
+      "type": "import"
+    },
+    "atoi": {
+      "type": "import"
+    },
+    "vfprintf": {
+      "type": "import"
+    },
+    "iswlower": {
+      "type": "import"
+    },
+    "iswspace": {
+      "type": "import"
+    },
+    "fseek": {
+      "type": "import"
+    },
+    "strerror_r": {
+      "type": "import"
+    },
+    "strtoull_l": {
+      "type": "import"
+    },
+    "memcmp": {
+      "type": "import"
+    },
+    "__errno": {
+      "type": "import"
+    },
+    "tolower": {
+      "type": "import"
+    },
+    "pthread_mutexattr_init": {
+      "type": "import"
+    },
+    "wcrtomb": {
+      "type": "import"
+    },
+    "pthread_mutex_lock": {
+      "type": "import"
+    },
+    "iswxdigit": {
+      "type": "import"
+    },
+    "toupper": {
+      "type": "import"
+    },
+    "strtoll": {
+      "type": "import"
+    },
+    "localeconv": {
+      "type": "import"
+    },
+    "__cxa_finalize": {
+      "type": "import"
+    },
+    "wcsnrtombs": {
+      "type": "import"
+    },
+    "strtoul": {
+      "type": "import"
+    },
+    "__register_atfork": {
+      "type": "import"
+    },
+    "pthread_key_create": {
+      "type": "import"
+    },
+    "__vsnprintf_chk": {
+      "type": "import"
+    },
+    "wcstod": {
+      "type": "import"
+    },
+    "__stack_chk_fail": {
+      "type": "import"
+    },
+    "wcsxfrm": {
+      "type": "import"
+    },
+    "mbsrtowcs": {
+      "type": "import"
+    },
+    "strtof": {
+      "type": "import"
+    },
+    "iswupper": {
+      "type": "import"
+    },
+    "vsscanf": {
+      "type": "import"
+    },
+    "setlocale": {
+      "type": "import"
+    },
+    "dl_iterate_phdr": {
+      "type": "import"
+    },
+    "__strlen_chk": {
+      "type": "import"
+    },
+    "swprintf": {
+      "type": "import"
+    },
+    "openlog": {
+      "type": "import"
+    },
+    "strtoull": {
+      "type": "import"
+    },
+    "wcstol": {
       "type": "import"
     }
   }
